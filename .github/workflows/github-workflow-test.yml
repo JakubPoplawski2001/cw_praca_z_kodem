@@ -19,9 +19,7 @@ jobs:
       run: echo Hello World!
       
     - name: Pylint install
-      run: |
-        python -m pip install --upgrade pip
-        pip install pylint
+      run: pip install -r requirements.txt
     
     - name: Pylint analyse
       run: pylint **/*.py
