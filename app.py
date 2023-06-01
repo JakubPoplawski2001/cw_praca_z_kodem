@@ -4,10 +4,9 @@ from flask import Flask
 app = Flask(__name__)
 @app.route('/')
 
-'''
-Docs
-'''
+
 def index():
+    """Doc"""
     return '<h1>Hello WSB! Greetings from Flask!</h1>'
 
 
