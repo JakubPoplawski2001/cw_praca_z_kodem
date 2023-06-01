@@ -1,3 +1,4 @@
+"""Module Doc"""
 from flask import Flask
 
 
