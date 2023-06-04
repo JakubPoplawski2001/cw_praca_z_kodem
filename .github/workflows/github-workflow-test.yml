@@ -1,0 +1,25 @@
+name: Pylint
+
+on:
+  push:
+  pull_request:
+    branches: [ main ]
+    
+jobs:
+  python:
+    runs-on: ubuntu-latest
+  
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Python version
+      run: python3 --version
+      
+    - name: Hello
+      run: echo Hello World!
+      
+    - name: Pylint install
+      run: pip install -r requirements.txt
+    
+    - name: Pylint analyse
+      run: pylint **/*.py
