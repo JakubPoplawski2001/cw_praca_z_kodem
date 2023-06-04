@@ -16,12 +16,8 @@ jobs:
       run: python3 --version
       
     - name: Hello
-      run: echo Hello World! 
+      run: echo Hello World!
       
-  pylint:
-    runs-on: ubuntu-latest
-    
-    steps:
     - name: Pylint install
       run: pip install -r requirements.txt
     
